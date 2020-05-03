@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,10 @@
 		4EEE65F9245EC8DE00008CB1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEE65F8245EC8DE00008CB1 /* ViewController.swift */; };
 		4EEE65FB245EC8E100008CB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EEE65FA245EC8E100008CB1 /* Assets.xcassets */; };
 		4EEE65FE245EC8E100008CB1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EEE65FC245EC8E100008CB1 /* Main.storyboard */; };
+		4EEE6608245ED20A00008CB1 /* FileObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEE6607245ED20A00008CB1 /* FileObjects.swift */; };
+		4EEE660B245ED2B600008CB1 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 4EEE660A245ED2B600008CB1 /* Alamofire */; };
+		4EEE660D245EEE2100008CB1 /* SharedRef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEE660C245EEE2100008CB1 /* SharedRef.swift */; };
+		4EEE660F245EF30400008CB1 /* bell.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4EEE660E245EF30400008CB1 /* bell.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +25,9 @@
 		4EEE65FD245EC8E100008CB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4EEE65FF245EC8E100008CB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4EEE6600245EC8E100008CB1 /* narru.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = narru.entitlements; sourceTree = "<group>"; };
+		4EEE6607245ED20A00008CB1 /* FileObjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileObjects.swift; sourceTree = "<group>"; };
+		4EEE660C245EEE2100008CB1 /* SharedRef.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedRef.swift; sourceTree = "<group>"; };
+		4EEE660E245EF30400008CB1 /* bell.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bell.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EEE660B245ED2B600008CB1 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,7 +61,11 @@
 		4EEE65F5245EC8DE00008CB1 /* narru */ = {
 			isa = PBXGroup;
 			children = (
+				4EEE660E245EF30400008CB1 /* bell.mp3 */,
+				4EEE6606245ECA1500008CB1 /* Store */,
 				4EEE65F6245EC8DE00008CB1 /* AppDelegate.swift */,
+				4EEE6607245ED20A00008CB1 /* FileObjects.swift */,
+				4EEE660C245EEE2100008CB1 /* SharedRef.swift */,
 				4EEE65F8245EC8DE00008CB1 /* ViewController.swift */,
 				4EEE65FA245EC8E100008CB1 /* Assets.xcassets */,
 				4EEE65FC245EC8E100008CB1 /* Main.storyboard */,
@@ -61,6 +73,13 @@
 				4EEE6600245EC8E100008CB1 /* narru.entitlements */,
 			);
 			path = narru;
+			sourceTree = "<group>";
+		};
+		4EEE6606245ECA1500008CB1 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Store;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -79,6 +98,9 @@
 			dependencies = (
 			);
 			name = narru;
+			packageProductDependencies = (
+				4EEE660A245ED2B600008CB1 /* Alamofire */,
+			);
 			productName = narru;
 			productReference = 4EEE65F3245EC8DE00008CB1 /* narru.app */;
 			productType = "com.apple.product-type.application";
@@ -107,6 +129,9 @@
 				Base,
 			);
 			mainGroup = 4EEE65EA245EC8DE00008CB1;
+			packageReferences = (
+				4EEE6609245ED2B600008CB1 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 4EEE65F4245EC8DE00008CB1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -123,6 +148,7 @@
 			files = (
 				4EEE65FB245EC8E100008CB1 /* Assets.xcassets in Resources */,
 				4EEE65FE245EC8E100008CB1 /* Main.storyboard in Resources */,
+				4EEE660F245EF30400008CB1 /* bell.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,7 +159,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EEE6608245ED20A00008CB1 /* FileObjects.swift in Sources */,
 				4EEE65F9245EC8DE00008CB1 /* ViewController.swift in Sources */,
+				4EEE660D245EEE2100008CB1 /* SharedRef.swift in Sources */,
 				4EEE65F7245EC8DE00008CB1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -327,6 +355,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4EEE6609245ED2B600008CB1 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4EEE660A245ED2B600008CB1 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4EEE6609245ED2B600008CB1 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4EEE65EB245EC8DE00008CB1 /* Project object */;
 }
